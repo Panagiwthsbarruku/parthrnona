@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+          <nav>
+            <div class="logo"><img src="MyLogo.jpg" width="60"></div>
+            <ul class="nav-list">
+              <li><a href="index.html">Αρχική</a></li>
+              <li><a href="#gallery">Γκαλερί</a></li>
+              <li><a href="#quiz">Κουίζ</a></li>
+              <li><a href="#facts">Γεγονότα</a></li>
+            </ul>
+          </nav>
+        </head>
+        <section class="chatbot-section" id="chat">
+            <h2>Ρώτησε το ΑI</h2>
+            <div class="chat-window" id="chat-window"></div>
+            <div class="chat-input">
+              <input type="text" id="user-input" placeholder="Κάνε μια ερώτηση για τον Παρθενώνα...">
+              <button onclick="handleChat()">
+                <i class="ri-arrow-up-line"></i>
+              </button>
+            </div>
+            <div class="restart-button">
+              <button onclick="restartChat()">
+                <i class="ri-restart-line"></i>
+              </button>
+            </div>
+            <div class="chat-window" id="chat-cards">
+              <button class="question-button" onclick="showAnswer(0)">Πότε ολοκληρώθηκε ο Παρθενώνας;</button>
+              <button class="question-button" onclick="showAnswer(1)">Πού βρίσκεται ο Παρθενώνας;</button>
+              <button class="question-button" onclick="showAnswer(2)">Σε ποια θεά ήταν αφιερωμένος ο Παρθενώνας;</button>
+              <button class="question-button" onclick="showAnswer(3)">Ποιο ρυθμό αρχιτεκτονικής ακολουθεί ο Παρθενώνας;</button>
+              <button class="question-button" onclick="showAnswer(4)">Ποιο υλικό χρησιμοποιήθηκε κυρίως για την κατασκευή;</button>
+            </div>
+          </div>
+          </section>
+</body>
+<script src="chatbot.js"></script>
+</html>
