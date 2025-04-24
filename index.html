@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Website Parthenona|FD </title>
+</head>
+<body>
+<head>
+<body>
+  <nav>
+    <div class="logo"><img src="MyLogo.jpg" width="60"></div>
+    <ul class="nav-list">
+      <li><a href="#">Αρχική</a></li>
+      <li><a href="#gallery">Γκαλερί</a></li>
+      <li><a href="#quiz">Κουίζ</a></li>
+      <li><a href="#facts">Γεγονότα</a></li>
+      <li><a href="chatbot.html">Ψηφιακός Βοηθός</a></li>
+    </ul>
+  </nav>
+</head>
+
+  <section class="content">
+    <h1>Ο Παρθενώνας</h1>
+    <p>Ένα από τα πιο εμβληματικά μνημεία της Αρχαίας Ελλάδας και σύμβολο του δυτικού πολιτισμού.</p>
+    <a href="#quiz">Ξεκίνα το Κουίζ</a>
+  </section>
+
+  <section id="gallery" class="carousel-section">
+    <h2>Φωτογραφίες</h2>
+    <div class="carousel">
+      <img id="carousel-img" src="https://images.unsplash.com/photo-1654214039672-7fc8f417f463?w=600" alt="carousel image">
+      <div class="carousel-buttons">
+        <button onclick="prevImage()">❮</button>
+        <button onclick="nextImage()">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="quiz-section">
+    <h2>Πάμε να τσεκάρουμε τις γνώσεις σου</h2>
+    <p id="quiz-question"></p>
+    <div class="quiz-options">
+      <button onclick="checkAnswer(this)"></button>
+      <button onclick="checkAnswer(this)"></button>
+      <button onclick="checkAnswer(this)"></button>
+    </div>
+    <div id="quiz-result"></div>
+  </section>
+
+  <section id="facts" class="fun-facts-section">
+    <h2>Ενδιαφέροντα Γεγονότα</h2>
+    <ul>
+      <li>Ο Παρθενώνας ολοκληρώθηκε το 438 π.Χ. και ήταν αφιερωμένος στην Αθηνά Παρθένο.</li>
+      <li>Ο ναός έχει 46 εξωτερικούς κίονες και 19 εσωτερικούς.</li>
+      <li>Το άγαλμα της Αθηνάς από τον Φειδία ήταν κατασκευασμένο από χρυσό και ελεφαντόδοντο.</li>
+      <li>Χρησιμοποιήθηκε ως χριστιανικός ναός, τζαμί και αποθήκη πυρίτιδας κατά καιρούς.</li>
+      <li>Καταστράφηκε εν μέρει το 1687 από έκρηξη μετά από βομβαρδισμό των Βενετών.</li>
+    </ul>
+  </section>
+
+</body>
+<script src="index.js"></script>
+</html>
